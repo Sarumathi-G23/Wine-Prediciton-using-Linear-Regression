@@ -1,1 +1,1 @@
-# Wine-Prediciton-using-Linear-Regression
+# wine-prediction
