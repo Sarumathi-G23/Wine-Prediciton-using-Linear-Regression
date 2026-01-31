@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(120deg, #11998e, #38ef7d);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .result-card {
+            background: white;
+            padding: 40px;
+            border-radius: 18px;
+            width: 400px;
+            text-align: center;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+        }
+
+        .result-card h1 {
+            color: #11998e;
+            margin-bottom: 20px;
+        }
+
+        .prediction {
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 10px 18px;
+            background: #38ef7d;
+            color: #000;
+            border-radius: 25px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 12px 25px;
+            background: linear-gradient(120deg, #11998e, #38ef7d);
+            color: white;
+            border-radius: 8px;
+            font-size: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+<div class="result-card">
+    <h1>🍇 Prediction Result</h1>
+
+    <div class="badge">
+        {{ prediction }}
+    </div>
+
+    <div class="prediction">
+        Thank you for using our ML model!
+    </div>
+
+    <a href="/">🔙 Predict Again</a>
+</div>
+
+</body>
+</html>
